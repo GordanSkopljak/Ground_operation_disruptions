@@ -1,0 +1,29 @@
+# Airline disruption care capstone
+# Python 3.11 or later
+#
+# The workflows themselves run in n8n and the dashboard runs in Power BI.
+# Python is used for synthetic data generation, CSV preparation, and the
+# LangSmith evaluation scripts. Keep this file honest: if you stop using a
+# package, take it out.
+#
+# Versions below are floors, not pins. Run `pip freeze` in your working env
+# and replace these with your actual versions before submitting, so that
+# someone else can reproduce what you ran rather than what you intended.
+
+# Data generation and preparation
+pandas>=2.2.0
+numpy>=1.26.0
+Faker>=25.0.0
+
+# Configuration
+python-dotenv>=1.0.0
+
+# Model calls
+openai>=1.40.0
+
+# Observability and evaluation
+# LANGSMITH_ENDPOINT must point at the EU region. See README.
+langsmith>=0.1.100
+
+# HTTP, for calling n8n webhooks from scripts
+requests>=2.32.0

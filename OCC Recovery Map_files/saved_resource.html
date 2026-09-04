@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<!-- saved from url=(0253)https://508301bc-c770-48a5-bc86-cc9ba101316a.frame.claudeusercontent.com/_f/1787990338-b9b1/?__frame_t=QtHW_7wCKKlNNCebELVCgnwi.62a140da-de5e-4c4c-97eb-1c1640d4d8b8.11e840db-43f5-4f69-92d2-abb6ecc1bfa3.1787994344&__frame_v=manifest.155e997702a4b8fc.json -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><!-- frame-runtime --><!--<base href="/_f/1787990338-b9b1/">--><base href="."><script>window.__FRAME_PREAMBLE={"v":1,"capabilities":{"artifact":"artifact.D_F1mx8d.js","assets":"assets.8Gk803W0.js","comments":"comments.GLuHR3zP.js","db":"db.h-3sndFg.js","downloads":"downloads.C3GSvEDP.js","embed":"embed.CxGAyc-v.js","mcp":"mcp.Bvma3qD7.js","network":"network.B5UA9Su4.js","notifications":"notifications.ssU4jy7G.js","permissions":"permissions.BNySkLV5.js","room":"room.BMMoe2BY.js","sample":"sample.BW2Uysoh.js","self":"artifact.D_F1mx8d.js","user":"user.BpKav-Rf.js"},"transforms":"_transforms.DSB5x63f.js","comments":"_comments.BoakUwmM.js","translate":"_translate.5HCW4BJh.js"}</script><script>(function(){"use strict";var te=["light","dark","system"],re=/^[A-Za-z0-9_-]{1,64}$/,$=/^[a-zA-Z_:][a-zA-Z0-9_:.-]{0,127}$/,ne=new Set(["class","hidden","value","checked","style","title","alt","placeholder","lang","dir","role","tabindex","disabled","readonly","contenteditable","open","colspan","rowspan"]);function oe(e){const t=e.toLowerCase();return t.startsWith("data-")||t.startsWith("aria-")||ne.has(t)}var Be="http://www.w3.org/1999/xhtml",se="http://www.w3.org/2000/svg",ae=new Set(["script","style","iframe","noscript","noframes","noembed","xmp","plaintext","template","title","textarea","object","embed"]),ie=new Set(["script","style"]);function ce(e){const t=e.localName.toLowerCase();return e.namespaceURI==="http://www.w3.org/1999/xhtml"?!ae.has(t):e.namespaceURI===se?!ie.has(t):!1}function M(e,t){return e===t||(e===160||e===32)&&(t===160||t===32)}function le(e,t){const r=e.length,n=t.length;let s=0;for(;s<r&&s<n&&M(e.charCodeAt(s),t.charCodeAt(s));)s++;let o=0;for(;o<r-s&&o<n-s&&M(e.charCodeAt(r-1-o),t.charCodeAt(n-1-o));)o++;return{p:s,s:o}}function ue(e,t){const r=e.firstChild;if(e.childNodes.length!==1||r===null||r.nodeType!==Node.TEXT_NODE){e.textContent=t;return}const n=r.data,s=n.length,o=t.length,{p:i,s:c}=le(n,t);i===s&&c===0&&s===o||r.replaceData(i,s-i-c,t.slice(i,o-c));const h=r.data,p=e.ownerDocument.getSelection?.()??null,w=p!==null&&p.rangeCount>0&&(p.anchorNode===r||p.focusNode===r)?{anchor:p.anchorNode,anchorOffset:p.anchorOffset,focus:p.focusNode,focusOffset:p.focusOffset}:null;let m=-1,g=-1;for(let f=0;f<h.length&&f<t.length;f++){const v=h.charCodeAt(f),b=t.charCodeAt(f);v!==b&&M(v,b)&&(m<0&&(m=f),g=f)}const a=m>=0;if(a&&r.replaceData(m,g-m+1,t.slice(m,g+1)),a&&w!==null&&w.anchor!==null&&w.focus!==null)try{p.setBaseAndExtent(w.anchor,w.anchorOffset,w.focus,w.focusOffset)}catch{}}var fe=new Set(["html","head","body","frameset"]);function de(e){return e.namespaceURI==="http://www.w3.org/1999/xhtml"&&fe.has(e.localName)}function pe(e){if(e===null||typeof e!="object")return!1;const t=e;if(typeof t.target!="string"||!re.test(t.target)||t.text!==void 0&&typeof t.text!="string")return!1;if(t.attrsSet!==void 0){if(t.attrsSet===null||typeof t.attrsSet!="object")return!1;for(const[r,n]of Object.entries(t.attrsSet))if(!$.test(r)||typeof n!="string")return!1}if(t.attrsRemoved!==void 0){if(!Array.isArray(t.attrsRemoved))return!1;for(const r of t.attrsRemoved)if(typeof r!="string"||!$.test(r))return!1}return!0}function me(e,t){if(e===null||typeof e!="object")return!1;const{seq:r,elements:n}=e;if(typeof r!="number"||!Number.isSafeInteger(r)||!Array.isArray(n)||n.length===0||n.length>64)return!1;for(let s=0;s<n.length;s++)if(!t(n[s]))return!1;return!0}function he(e){return e===null||typeof e!="object"?!1:me(e.__frame_patch,pe)}function _e(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_init;return t!==null&&typeof t=="object"}function ve(e){return e!==null&&typeof e=="object"&&e.__frame_size_poke===!0}function ye(e){if(e===null||typeof e!="object")return!1;const t=e.__frame_theme;if(t===null||typeof t!="object")return!1;const r=t.theme;return typeof r=="string"&&te.includes(r)}var A=/^[\w.-]+\.js$/;function we(e,t,r){return r?"inert":typeof t=="string"&&A.test(t)?e?[t]:"inert":e?"inert":"framed"}function ge(){return{post(e,t){parent.postMessage(e,t)},on(e){const t=r=>{r.source===parent&&e(r.data,r.origin,r.isTrusted)};return addEventListener("message",t),()=>removeEventListener("message",t)}}}function be(){return{post:()=>{},on:()=>()=>{}}}var j="__frame_scroll",Ee=150,Ae=310,Se=160,Te=3e4;function ke(){let e=0,t=!1,r=!1,n=!1,s=0,o=null;const i=l=>{try{sessionStorage.setItem(j,JSON.stringify({y:l}))}catch{}},c=()=>{if(clearTimeout(e),o===null)return;const l=o;o=null,i(l)},h=()=>{if(t){t=!1;return}r=!0,o=scrollY,clearTimeout(e),e=setTimeout(c,Ee)};try{addEventListener("scroll",h,{passive:!0}),addEventListener("pagehide",c)}catch{}const p=()=>{let l;try{l=sessionStorage.getItem(j)}catch{return null}if(l===null)return null;let _;try{_=JSON.parse(l)}catch{_=null}const d=_?.y;if(!(typeof d=="number"&&Number.isFinite(d)&&d>=0)){try{sessionStorage.removeItem(j)}catch{}return null}return d};let w=!1;const m=l=>{try{const _=scrollY;scrollTo({top:l,left:0,behavior:"instant"}),s=l,n=!0,clearTimeout(e),o=null,i(l);const d=scrollY;d!==_&&(t=!0),d!==l&&!w&&(w=!0,addEventListener("load",()=>{try{if(scrollY===d){const T=p();m(T!==null?T:s)}}catch{}},{once:!0}))}catch{}},g=()=>{try{return!!location.hash}catch{return!0}};let a=!1;const f=()=>{try{if(a||innerWidth>Ae||innerHeight>Se)return;a=!0;const l=Date.now(),_=()=>{try{removeEventListener("resize",_)}catch{}if(Date.now()-l>Te||r||g())return;const d=p();m(d!==null?d:s)};addEventListener("resize",_)}catch{}};let v=!1,b=!1;return{restore(){if(v||(v=!0,g()))return;const l=p();l!==null&&(m(l),f())},promoted(){if(b||(b=!0,g()))return;const l=p();l!==null?(m(l),f()):n&&m(s)}}}function Re(e,t,r,n){let s=null;try{s=window.trustedTypes?.createPolicy("frame-runtime",{createScriptURL:h=>h})??null}catch{}const o=window.Worker,i=o?.prototype,c=Object.freeze({Worker:o,workerOn:i?.addEventListener,workerPost:i?.postMessage,workerTerminate:i?.terminate,fetch:window.fetch.bind(window),preventDefault:Event.prototype.preventDefault,policy:s,origins:t});r(e).then(h=>h?.bootTopLevel?h.bootTopLevel(c,n):n.settle()).catch(()=>n.settle())}var De="modulepreload",Ie=function(e){return"/"+e},Ue={},Le=function(t,r,n){let s=Promise.resolve();function o(i){const c=new Event("vite:preloadError",{cancelable:!0});if(c.payload=i,window.dispatchEvent(c),!c.defaultPrevented)throw i}return s.then(i=>{for(const c of i||[])c.status==="rejected"&&o(c.reason);return t().catch(o)})},Oe=window===top,q=Object.getOwnPropertyDescriptor(window,"claude"),k=we(Oe,window.__FRAME_PREAMBLE?.topLevel,q?.writable===!1),N=typeof k=="object"&&k[0],y=N?be():ge();(function(){const e=Object.defineProperty,t=globalThis,r=["RTCPeerConnection","webkitRTCPeerConnection","RTCDataChannel","RTCIceCandidate","RTCSessionDescription","RTCRtpSender","RTCRtpReceiver"];let n=0;for(let s=0;s<r.length;s++){const o=r[s];try{e(t,o,{value:void 0,writable:!1,configurable:!1})}catch{try{delete t[o]}catch{}try{e(t,o,{value:void 0,writable:!1,configurable:!0})}catch{}}typeof t[o]=="function"&&n++}if(n&&k==="framed")try{y.post({__frame_rtc_lockdown_failed:n},"*")}catch{}})();var Pe=1e4,Y=Object.freeze([...window.__FRAME_PREAMBLE?.origins??["https://claude.ai","https://preview.claude.ai"]]);function X(e){for(const t of Y)if(t.endsWith(":*"))try{const r=new URL(e);if(`${r.protocol}//${r.hostname}:*`===t)return!0}catch{}else if(e===t)return!0;return!1}var R=Object.freeze({...window.__FRAME_PREAMBLE?.capabilities}),B=window.__FRAME_PREAMBLE?.transforms,D=window.__FRAME_PREAMBLE?.comments,I=window.__FRAME_PREAMBLE?.translate;function S(e){return Le(()=>import("/_runtime/"+e),void 0)}function G(e,t){return{contract:e.contract,changes:new Set(e.changes??[]),flags:new Set(e.flags??[]),capabilities:e.capabilities??{},capBudgets:e.capBudgets??{},transforms:new Map,shellOrigin:t,mount:x,hooks:O,pipe:()=>({wrap:(r,n)=>(...s)=>{try{return n(...s)}catch(o){return Promise.reject(o)}}})}}var L=null,E=null;function V(e,t,r){try{Object.defineProperty(e,t,{value:r,writable:!1,configurable:!1,enumerable:!0})}catch{try{Object.defineProperty(e,t,{value:r,writable:!1,configurable:!0,enumerable:!0})}catch{}}}var U=!1,O={editBefore:null,edit:null};function Ce(e,t,r=!1){const n=[];let s;if(r)try{O.editBefore?.(e)}catch{}for(const o of e.elements){const i=document.querySelector(`[data-id="${o.target}"]`);if(!i){s=o.target;break}if([...Object.keys(o.attrsSet??{}),...o.attrsRemoved??[]].some(c=>!oe(c))){s=o.target;break}if(o.text!==void 0&&(!ce(i)||de(i))){s=o.target;break}for(const[c,h]of Object.entries(o.attrsSet??{}))if(!J(i,c)){try{i.setAttribute(c,h)}catch{}Z(i,c,h)}for(const c of o.attrsRemoved??[])J(i,c)||(i.removeAttribute(c),Z(i,c,null));typeof o.text=="string"&&ue(i,o.text),n.push(o.target)}if(r)try{O.edit?.(e.seq,n,s)}catch{}if(s!==void 0){y.post({__frame_patch_miss:{seq:e.seq}},t);return}try{document.dispatchEvent(new CustomEvent("claude:edit",{detail:{seq:e.seq,targets:n}}))}catch{}}function Z(e,t,r){if(!(e instanceof HTMLInputElement))return;const n=t.toLowerCase();n==="checked"?e.checked=r!==null:n==="value"&&e.type!=="file"&&(e.value=r??"")}function J(e,t){const r=t.toLowerCase(),n=e;return r==="data-id"||(r==="value"||r==="checked")&&(n.__artifactSecret===!0||/^(password|hidden|file)$/.test(n.type??"")||/(^|\s)(cc-|one-time-code|current-password|new-password)/i.test(`${e.getAttribute("autocomplete")??""} ${n.autocomplete??""}`))}function Q(e){const t=document.documentElement;e==="light"||e==="dark"?(t.dataset.theme=e,t.style.colorScheme=e,U=!0):U&&(delete t.dataset.theme,t.style.colorScheme="",U=!1)}var P=new Map;function Me(){let e;const t={u:new Promise(r=>{e=r}),r:r=>{t.done=!0,e(r)},done:!1,nulled:!1};return t}function F(){for(const e of P.values())e.done||(e.nulled=!0,e.r(null))}var je=Object.freeze(Object.assign(Object.create(null),{call:Function.prototype.call,apply:Function.prototype.apply,bind:Function.prototype.bind})),x=(e,t)=>{const r=P.get(e);if(!r||r.done){r?.nulled&&E&&y.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:e}},E);return}const n=typeof t=="function"?Object.setPrototypeOf(t,je):Object.assign(Object.create(null),t);typeof n.then=="function"&&delete n.then,r.r(Object.freeze(n))};function ee(){const e=q?.value??{};V(window,"claude",e);for(const t of Object.keys(R)){if(e[t]!==void 0){V(e,t,e[t]);continue}P.set(t,Me())}if(e.use===void 0){const t=r=>{if(typeof r!="string"||!Object.hasOwn(R,r))return Promise.resolve(null);const n=P.get(r);return n?n.u:Promise.resolve(e[r]??null)};try{Object.defineProperty(e,"use",{value:t,writable:!0,configurable:!0,enumerable:!1})}catch{}}}if(k==="framed"){const e=B&&A.test(B)?S(B).catch(()=>{}):Promise.resolve(void 0),t=a=>{if(a.type==="auxclick"&&a.button!==1)return;const f=a.target,v=f&&f.closest?f.closest("a[href],area[href]"):null;if(!v)return;const b=v.getAttribute("href");if(!b)return;let l;try{l=new URL(b,document.baseURI)}catch{return}if((l.protocol==="http:"||l.protocol==="https:")&&l.origin!==location.origin){a.preventDefault();const _=(v.getAttribute("target")??"").toLowerCase(),d=a.type==="auxclick"||a.metaKey||a.ctrlKey||a.shiftKey||a.altKey||!["","_self","_top","_parent"].includes(_);y.post({__frame_nav:!0,url:l.href,newTab:d},"*")}};addEventListener("click",t,!0),addEventListener("auxclick",t,!0);const r={},n=a=>{a.isTrusted&&(r.pointer=!0)},s=a=>{a.isTrusted&&(r.click=!0)};addEventListener("pointermove",n,{capture:!0,passive:!0}),addEventListener("click",s,{capture:!0,passive:!0}),e.then(a=>{a?.wireNav&&(a.wireNav(),removeEventListener("click",t,!0),removeEventListener("auxclick",t,!0),removeEventListener("pointermove",n,!0),removeEventListener("click",s,!0),a.wireEngagement?.(r))});let o=null;try{o=ke()}catch{}ee();let i=null,c=null,h=0;const p=y.on((a,f)=>{X(f)&&_e(a)&&(i=a.__frame_init,E=f,p(),clearTimeout(h),c?.())});y.post({__frame_connect:!0},"*");const w=new Promise(a=>{c=a,h=setTimeout(()=>{p(),a()},Pe)}),m=document.readyState==="loading"?new Promise(a=>document.addEventListener("DOMContentLoaded",()=>a(),{once:!0})):Promise.resolve();m.then(()=>{try{o?.restore()}catch{}});const g={cb:null};y.on((a,f)=>{if(X(f)&&ve(a)){try{o?.promoted()}catch{}g.cb?.()}}),w.then(async()=>{if(!i||!E){F();return}Q(i.theme);const a=E;let f=!1,v=!1;y.on((u,z,C)=>{if(z!==a)return;ye(u)&&Q(u.__frame_theme.theme),he(u)&&Ce(u.__frame_patch,a,C);const H=u?.__fc_mode;H&&typeof H=="object"&&!f&&D&&A.test(D)&&(f=!0,S(D).then(K=>K.install?.(a,H.on===!0)).catch(()=>{}));const W=u?.__ft_cmd;W&&typeof W=="object"&&!v&&I&&A.test(I)&&(v=!0,S(I).then(K=>K.install?.(a,W)).catch(()=>{}))});const b=Object.keys(i.capabilities??{}).filter(u=>Object.hasOwn(R,u)).map(u=>[u,R[u]]).filter(u=>typeof u[1]=="string"&&A.test(u[1])),l=await Promise.allSettled(b.map(([,u])=>S(u))),_=await e,d=E;if(_?.buildBoot||y.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:"_transforms"}},d),_?.buildBoot)try{L=_.buildBoot(i,_.TRANSFORMS??{},{shellOrigin:d,mount:x,hooks:O},u=>y.post({__frame_cap_telemetry:u},d))}catch{y.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:"_transforms"}},d),L=G(i,d)}else L=G(i,d);const T=u=>y.post({__frame_cap_telemetry:{kind:"cap-load-error",cap:u}},d),Ne=L;l.forEach((u,z)=>{const C=b[z][0];if(u.status!=="fulfilled"){T(C);return}try{u.value?.install?.(Ne)}catch{T(C)}}),F(),await m,y.post({__frame_ready:!0},E),e.then(u=>u?.installSizeReporter?.(d,g))})}else N&&(ee(),Re(N,Y,S,{settle:F,mount:x}))})();</script><!-- /frame-runtime --><meta name="viewport" content="width=device-width,initial-scale=1"><style>:root{color-scheme:light}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found]){display:none!important}</style></head><body>
+<title>OCC Recovery Map</title>
+<link rel="stylesheet" href="./css2">
+<style>
+  :root {
+    --ground: #F1F3F4;
+    --surface: #FFFFFF;
+    --ink: #16191D;
+    --ink-soft: #4E565F;
+    --rule: #D5DADE;
+    --rule-soft: #E4E8EB;
+    --machine: #2F5A78;
+    --machine-bg: #E7EDF2;
+    --human: #93560F;
+    --human-bg: #F4EADC;
+    --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+    --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+    --mono: "IBM Plex Mono", "SFMono-Regular", Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground: #101317;
+      --surface: #171B20;
+      --ink: #E5E8EB;
+      --ink-soft: #98A2AC;
+      --rule: #2B3239;
+      --rule-soft: #21272D;
+      --machine: #82B5D6;
+      --machine-bg: #17262F;
+      --human: #E0A45C;
+      --human-bg: #271F14;
+    }
+  }
+  :root[data-theme="dark"] {
+    --ground: #101317;
+    --surface: #171B20;
+    --ink: #E5E8EB;
+    --ink-soft: #98A2AC;
+    --rule: #2B3239;
+    --rule-soft: #21272D;
+    --machine: #82B5D6;
+    --machine-bg: #17262F;
+    --human: #E0A45C;
+    --human-bg: #271F14;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.62;
+    margin: 0;
+    padding: 0 1.25rem 6rem;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .doc {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) min(43rem, 100%) minmax(0, 1fr);
+    row-gap: 1.5rem;
+  }
+  .doc > * { grid-column: 2; margin: 0; }
+  .doc > .bleed {
+    grid-column: 1 / -1;
+    width: min(60rem, 100%);
+    justify-self: center;
+  }
+
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+  }
+
+  header { padding-top: 4.5rem; }
+  h1 {
+    font-family: var(--display);
+    font-weight: 700;
+    font-size: clamp(2.1rem, 5.5vw, 3.1rem);
+    line-height: 1.04;
+    letter-spacing: -0.022em;
+    text-wrap: balance;
+    margin: 0.85rem 0 0;
+  }
+  .standfirst {
+    font-size: 1.19rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin-top: 1rem;
+  }
+  .byline {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--ink-soft);
+    margin-top: 1.6rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1.3rem;
+  }
+
+  h2 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.42rem;
+    letter-spacing: -0.012em;
+    line-height: 1.2;
+    text-wrap: balance;
+    margin: 2.6rem 0 0;
+    padding-top: 1.6rem;
+    border-top: 1px solid var(--rule);
+  }
+  h3 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.02rem;
+    letter-spacing: 0.005em;
+    margin: 1.9rem 0 0;
+  }
+  h3 .num {
+    font-family: var(--mono);
+    font-weight: 500;
+    color: var(--machine);
+    margin-right: 0.55rem;
+  }
+
+  p { margin: 0.85rem 0 0; }
+  p.lead-in { margin-top: 1.1rem; }
+
+  .caveat {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--human);
+    padding: 1.2rem 1.4rem;
+    font-size: 0.98rem;
+    line-height: 1.55;
+  }
+  .caveat p:first-child { margin-top: 0; }
+
+  .legend {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem 1.8rem;
+    font-family: var(--mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.03em;
+    color: var(--ink-soft);
+    margin-bottom: 0.4rem;
+  }
+  .legend span { display: inline-flex; align-items: center; gap: 0.5rem; }
+  .swatch { width: 0.72rem; height: 0.72rem; display: inline-block; }
+  .sw-human { background: var(--human); }
+  .sw-machine { background: var(--machine); }
+
+  figure.bleed { margin: 1rem 0 0.5rem; }
+  figure svg { width: 100%; height: auto; display: block; color: var(--ink); }
+  figcaption {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--ink-soft);
+    margin-top: 0.9rem;
+    max-width: 43rem;
+  }
+
+  .d-box { fill: var(--surface); stroke: var(--rule); stroke-width: 1; }
+  .d-box-h { fill: var(--human-bg); stroke: var(--human); stroke-width: 1; }
+  .d-box-m { fill: var(--machine-bg); stroke: var(--machine); stroke-width: 1; }
+  .d-t { fill: var(--ink); font-family: "IBM Plex Mono", monospace; font-size: 12px; }
+  .d-t-h { fill: var(--human); font-family: "IBM Plex Mono", monospace; font-size: 12px; }
+  .d-t-m { fill: var(--machine); font-family: "IBM Plex Mono", monospace; font-size: 12px; }
+  .d-stage { fill: var(--ink); font-family: "Archivo", sans-serif; font-size: 14px; font-weight: 600; }
+  .d-num { fill: var(--machine); font-family: "IBM Plex Mono", monospace; font-size: 12px; font-weight: 500; }
+  .d-head { font-family: "IBM Plex Mono", monospace; font-size: 11px; letter-spacing: 1.4px; }
+  .d-lbl { fill: var(--ink-soft); font-family: "IBM Plex Mono", monospace; font-size: 11px; }
+  .d-line { stroke: var(--ink-soft); stroke-width: 1.2; fill: none; }
+  .d-line-h { stroke: var(--human); stroke-width: 1.2; fill: none; stroke-dasharray: 5 4; }
+  .d-arrow { fill: var(--ink-soft); }
+  .d-arrow-h { fill: var(--human); }
+
+  .tablewrap { overflow-x: auto; border: 1px solid var(--rule); background: var(--surface); }
+  table { border-collapse: collapse; width: 100%; min-width: 46rem; font-size: 0.92rem; }
+  th, td { text-align: left; padding: 0.78rem 1rem; border-bottom: 1px solid var(--rule-soft); vertical-align: top; }
+  thead th {
+    font-family: var(--mono);
+    font-weight: 500;
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    border-bottom: 1px solid var(--rule);
+    white-space: nowrap;
+  }
+  tbody tr:last-child td { border-bottom: none; }
+  td.verdict { font-family: var(--mono); font-size: 0.8rem; white-space: nowrap; }
+  .tag-m { color: var(--machine); }
+  .tag-h { color: var(--human); }
+
+  ol.qs { list-style: none; counter-reset: q; padding: 0; margin: 1.2rem 0 0; display: grid; gap: 1rem; }
+  ol.qs li {
+    counter-increment: q;
+    display: grid;
+    grid-template-columns: 2.2rem 1fr;
+    gap: 0.4rem;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    padding: 0.95rem 1.1rem;
+  }
+  ol.qs li::before {
+    content: "Q" counter(q);
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--machine);
+    padding-top: 0.16rem;
+  }
+
+  ul.plain { padding-left: 1.1rem; margin: 0.9rem 0 0; }
+  ul.plain li { margin-top: 0.5rem; }
+
+  .sources { font-size: 0.88rem; line-height: 1.5; }
+  .sources ol { padding-left: 1.3rem; margin: 0.9rem 0 0; }
+  .sources li { margin-top: 0.55rem; color: var(--ink-soft); }
+  a { color: var(--machine); text-underline-offset: 0.16em; }
+  a:focus-visible { outline: 2px solid var(--human); outline-offset: 2px; }
+
+  footer {
+    margin-top: 3rem;
+    padding-top: 1.4rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--mono);
+    font-size: 0.76rem;
+    color: var(--ink-soft);
+  }
+</style>
+
+<div class="doc">
+
+  <header>
+    <div class="eyebrow">Working draft · outside view</div>
+    <h1>How an airline actually recovers from a disruption</h1>
+    <p class="standfirst">A map of the decision flow in an operations control centre, drawn from public sources, marking the points where I think the decision still depends on something no system holds.</p>
+    <div class="byline">
+      <span>Gordan Skopljak</span>
+      <span>v0.1</span>
+      <span>August 2026</span>
+      <span>Hamburg</span>
+    </div>
+  </header>
+
+  <div class="caveat">
+    <p><strong>Read this as a set of questions, not a set of findings.</strong> I have never worked in an OCC. Everything below is assembled from published research, regulation and vendor material, all listed at the end. I am circulating it at v0.1 because the parts I have wrong are more useful to me than the parts I have right, and the only people who can tell them apart have run the desk.</p>
+  </div>
+
+  <h2>The sequence</h2>
+
+  <p>Recovery is conventionally handled in a fixed order: aircraft first, then crew, then passengers. The research literature is direct about why this is a compromise. Sequential decisions miss the interdependencies between the three resources, so the answer is feasible rather than good, and controllers choose a workable option quickly rather than exploring alternatives.<sup>1</sup> Integrated recovery, solving aircraft and crew jointly, is where the optimisation work is heading.</p>
+
+  <p>What interests me is not the optimisation gap. It is the second column of the picture: the inputs that are not in any system when the decision is made.</p>
+
+  <div class="legend">
+    <span><i class="swatch sw-human"></i> held by people</span>
+    <span><i class="swatch sw-machine"></i> already in the system</span>
+  </div>
+
+  <figure class="bleed">
+    <svg viewBox="0 0 940 615" role="img" aria-label="The four stage airline recovery sequence, showing for each stage what the system already holds and what depends on human judgement, with a dashed feedback path where delay codes assigned after the event become the label in historical data.">
+      <defs>
+        <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <polygon class="d-arrow" points="0,1 10,5 0,9"></polygon>
+        </marker>
+        <marker id="arh" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+          <polygon class="d-arrow-h" points="0,1 10,5 0,9"></polygon>
+        </marker>
+      </defs>
+
+      <text class="d-head d-t-h" x="50" y="24">HELD BY PEOPLE</text>
+      <text class="d-head" fill="currentColor" x="340" y="24">RECOVERY SEQUENCE</text>
+      <text class="d-head d-t-m" x="680" y="24">IN THE SYSTEM</text>
+
+      <rect class="d-box-h" x="50" y="64" width="250" height="90"></rect>
+      <text class="d-t-h" x="64" y="88">One delay, or the first</text>
+      <text class="d-t-h" x="64" y="106">move of a cascade?</text>
+      <text class="d-t-h" x="64" y="132">Which stations will cope</text>
+      <rect class="d-box" x="340" y="79" width="280" height="60"></rect>
+      <text class="d-num" x="358" y="103">01</text>
+      <text class="d-stage" x="358" y="124">Detect and assess</text>
+      <rect class="d-box-m" x="680" y="64" width="240" height="90"></rect>
+      <text class="d-t-m" x="694" y="88">ETA feeds, rotation</text>
+      <text class="d-t-m" x="694" y="106">Weather, NOTAM</text>
+      <text class="d-t-m" x="694" y="124">ATFM slot movement</text>
+      <line class="d-line" x1="300" y1="109" x2="334" y2="109" marker-end="url(#ar)"></line>
+      <line class="d-line" x1="680" y1="109" x2="626" y2="109" marker-end="url(#ar)"></line>
+
+      <rect class="d-box-h" x="50" y="194" width="250" height="90"></rect>
+      <text class="d-t-h" x="64" y="218">Will the engineer sign</text>
+      <text class="d-t-h" x="64" y="236">the deferral tonight?</text>
+      <text class="d-t-h" x="64" y="262">Can that station really</text>
+      <text class="d-t-h" x="64" y="280">turn it in the book time</text>
+      <rect class="d-box" x="340" y="209" width="280" height="60"></rect>
+      <text class="d-num" x="358" y="233">02</text>
+      <text class="d-stage" x="358" y="254">Recover the aircraft</text>
+      <rect class="d-box-m" x="680" y="194" width="240" height="90"></rect>
+      <text class="d-t-m" x="694" y="218">Tail availability, MEL</text>
+      <text class="d-t-m" x="694" y="236">Maintenance window</text>
+      <text class="d-t-m" x="694" y="254">Slot, curfew, turn time</text>
+      <line class="d-line" x1="300" y1="239" x2="334" y2="239" marker-end="url(#ar)"></line>
+      <line class="d-line" x1="680" y1="239" x2="626" y2="239" marker-end="url(#ar)"></line>
+
+      <rect class="d-box-h" x="50" y="324" width="250" height="90"></rect>
+      <text class="d-t-h" x="64" y="348">Will the commander</text>
+      <text class="d-t-h" x="64" y="366">use discretion?</text>
+      <text class="d-t-h" x="64" y="392">Who will actually say</text>
+      <text class="d-t-h" x="64" y="410">yes to the extra sector</text>
+      <rect class="d-box" x="340" y="339" width="280" height="60"></rect>
+      <text class="d-num" x="358" y="363">03</text>
+      <text class="d-stage" x="358" y="384">Recover the crew</text>
+      <rect class="d-box-m" x="680" y="324" width="240" height="90"></rect>
+      <text class="d-t-m" x="694" y="348">FDP and duty limits</text>
+      <text class="d-t-m" x="694" y="366">Reserve availability</text>
+      <text class="d-t-m" x="694" y="384">Positioning options</text>
+      <line class="d-line" x1="300" y1="369" x2="334" y2="369" marker-end="url(#ar)"></line>
+      <line class="d-line" x1="680" y1="369" x2="626" y2="369" marker-end="url(#ar)"></line>
+
+      <rect class="d-box-h" x="50" y="454" width="250" height="90"></rect>
+      <text class="d-t-h" x="64" y="478">Who is actually on</text>
+      <text class="d-t-h" x="64" y="496">board tonight?</text>
+      <text class="d-t-h" x="64" y="522">Which connection is</text>
+      <text class="d-t-h" x="64" y="540">worth protecting</text>
+      <rect class="d-box" x="340" y="469" width="280" height="60"></rect>
+      <text class="d-num" x="358" y="493">04</text>
+      <text class="d-stage" x="358" y="514">Recover the passengers</text>
+      <rect class="d-box-m" x="680" y="454" width="240" height="90"></rect>
+      <text class="d-t-m" x="694" y="478">Seat inventory</text>
+      <text class="d-t-m" x="694" y="496">EU261 exposure</text>
+      <text class="d-t-m" x="694" y="514">Hotel and duty of care</text>
+      <line class="d-line" x1="300" y1="499" x2="334" y2="499" marker-end="url(#ar)"></line>
+      <line class="d-line" x1="680" y1="499" x2="626" y2="499" marker-end="url(#ar)"></line>
+
+      <line class="d-line" x1="440" y1="139" x2="440" y2="203" marker-end="url(#ar)"></line>
+      <text class="d-lbl" x="452" y="175">scope sets the options</text>
+      <line class="d-line" x1="440" y1="269" x2="440" y2="333" marker-end="url(#ar)"></line>
+      <text class="d-lbl" x="452" y="305">tail fixes the pairing</text>
+      <line class="d-line" x1="440" y1="399" x2="440" y2="463" marker-end="url(#ar)"></line>
+      <text class="d-lbl" x="452" y="435">schedule fixes misconnects</text>
+
+      <path class="d-line" d="M 580 339 L 580 275" marker-end="url(#ar)"></path>
+      <text class="d-lbl" x="592" y="311">no legal crew</text>
+
+      <path class="d-line-h" d="M 480 529 L 480 578 L 20 578 L 20 46 L 480 46 L 480 73" marker-end="url(#arh)"></path>
+      <text class="d-t-h" x="250" y="570" text-anchor="middle" font-size="11">delay code assigned after the event becomes the label in the history</text>
+    </svg>
+    <figcaption>Figure 1. The conventional sequential recovery order. The left column is what I believe stays with people even when the right column is fully instrumented. The dashed return path is the claim I am least confident about and most want tested.</figcaption>
+  </figure>
+
+  <h2>Stage by stage</h2>
+
+  <h3><span class="num">01</span>Detect and assess</h3>
+  <p>Something breaks: a technical finding, weather, a crew member calling in sick, a flow slot moving. The event itself is visible to the system almost immediately. The judgement that follows is whether this is a contained delay or the first move in a cascade through the rotation, and that reading appears to come from experience rather than from data on the screen.</p>
+
+  <h3><span class="num">02</span>Recover the aircraft</h3>
+  <p>Controllers swap tails, reroute rotations, delay or cancel. The binding constraints here are the most machine readable of the whole sequence: tail availability, minimum turnaround, maintenance windows, airport slots, curfews, and the rule that all legs of a flight take the same aircraft or all cancel.<sup>1</sup></p>
+  <p>The soft part is whether a constraint that looks fixed actually is. A book turnaround time and the time a particular handler at a particular outstation can achieve at 23:00 are not the same number, and I suspect the difference is carried by the controller who has dealt with that station before.</p>
+
+  <h3><span class="num">03</span>Recover the crew</h3>
+  <p>Now the aircraft plan meets flight time limitations, and this is where I find the clearest example of the gap. Under EASA rules a commander may extend the flight duty period at their discretion, by up to two hours for a two pilot crew and three for an augmented crew, always measured against the maximum daily FDP table and reduced by any extension already applied.<sup>2</sup></p>
+  <p>So one of the most valuable options available during a recovery is legally real, quantifiable, and conditional on a specific person agreeing to it. A system can compute that the option exists. Whether it is available tonight, with this commander, after this kind of day, is a different question, and the crew controller who picks up the phone is the one holding the answer.</p>
+
+  <h3><span class="num">04</span>Recover the passengers</h3>
+  <p>Rebooking, accommodation, and compensation exposure under EU261. The counts are in the system. What seems not to be, at least not in a usable form, is the composition: which connections cascade into another airline, who is travelling as an unaccompanied minor, which passenger group makes a cancellation more expensive than the fare data suggests.</p>
+
+  <h2>Where the judgement sits</h2>
+
+  <p class="lead-in">My working split. The right hand column is the part I expect to be corrected.</p>
+
+  <div class="tablewrap">
+    <table>
+      <thead>
+        <tr>
+          <th>Decision point</th>
+          <th>What the system holds</th>
+          <th>What a person holds</th>
+          <th>Automatable?</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Slot and curfew compliance</td>
+          <td>Hard times, published</td>
+          <td>Little</td>
+          <td class="verdict tag-m">yes</td>
+        </tr>
+        <tr>
+          <td>Crew legality</td>
+          <td>FDP limits, duty history</td>
+          <td>Little</td>
+          <td class="verdict tag-m">yes</td>
+        </tr>
+        <tr>
+          <td>Delay propagation forecast</td>
+          <td>Rotation graph, history</td>
+          <td>Pattern sense</td>
+          <td class="verdict tag-m">mostly</td>
+        </tr>
+        <tr>
+          <td>Real turnaround capability</td>
+          <td>Book time by station</td>
+          <td>What this handler can do tonight</td>
+          <td class="verdict tag-h">partly</td>
+        </tr>
+        <tr>
+          <td>Commander's discretion</td>
+          <td>That the option exists</td>
+          <td>Whether it will be used</td>
+          <td class="verdict tag-h">no</td>
+        </tr>
+        <tr>
+          <td>Deferring a technical finding</td>
+          <td>MEL entry</td>
+          <td>Whether the engineer signs</td>
+          <td class="verdict tag-h">no</td>
+        </tr>
+        <tr>
+          <td>Which connection to protect</td>
+          <td>Passenger counts, fares</td>
+          <td>Who is on board and why it matters</td>
+          <td class="verdict tag-h">partly</td>
+        </tr>
+        <tr>
+          <td>Accountability for the call</td>
+          <td>Nothing</td>
+          <td>All of it</td>
+          <td class="verdict tag-h">no</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>The claim I am least sure about</h2>
+
+  <p>Delay codes under the IATA standard are assigned after the event, and they are the label attached to most historical operational data.<sup>3</sup> A code records what the delay was attributed to. Attribution and physical cause are not obviously the same thing, particularly where the code determines which party absorbs the cost and is settled between an airline and a ground handler.</p>
+
+  <p>If that gap is wide, then a model trained on coded history is partly learning who was held responsible rather than what happened, and its recommendations would inherit that. If the gap is narrow, this concern is noise and I should drop it.</p>
+
+  <p>I cannot resolve this from outside. It is the single thing I would most like someone who codes delays to tell me.</p>
+
+  <h2>What I expect to have wrong</h2>
+
+  <ul class="plain">
+    <li>The four stage split is probably too clean. Real recovery looks more like several loops than a pipeline, and I have drawn only one return path.</li>
+    <li>I have modelled a network carrier with a hub. Point to point and regional operations almost certainly break this shape.</li>
+    <li>I have said nothing about the handover between shifts, which several sources hint is where context is lost, and which I do not understand at all.</li>
+    <li>I have treated the OCC as one room. In practice crew control, maintenance control and network control may have genuinely competing objectives, and I have not drawn that tension anywhere.</li>
+  </ul>
+
+  <h2>Open questions</h2>
+
+  <p class="lead-in">Each of these should take a couple of minutes to answer and none of them touch anything proprietary.</p>
+
+  <ol class="qs">
+    <li>What is the recommendation a system would produce that a controller would almost always override, and what is the reason behind the override?</li>
+    <li>What information is reliably missing or late at the moment a recovery decision has to be made?</li>
+    <li>Where does the OCC still fall back to the phone and a whiteboard rather than the system, and is that a tooling gap or a deliberate choice?</li>
+    <li>How accurate are delay codes as a record of cause, in your experience, and does anyone treat them as training data?</li>
+    <li>What does a station or ground crew know that never reaches the system in a usable form?</li>
+    <li>When a recovery decision turns out badly, what is examined first: the decision, the information available at the time, or the person?</li>
+  </ol>
+
+  <h2 class="sources-h">Sources</h2>
+  <div class="sources">
+    <ol>
+      <li><a href="https://arxiv.org/html/2510.26831">Disruption Management in Airline Operations: A Solver-based Approach using Time-Space Network Optimization</a>, arXiv. Source for the sequential recovery order, the binding constraints, and the stated limitations of current practice.</li>
+      <li><a href="https://www.easa.europa.eu/en/faq/47599">EASA, commander's discretion under ORO.FTL.205(f)</a>. Source for the two and three hour extension limits and their relationship to the maximum daily FDP table.</li>
+      <li><a href="https://en.wikipedia.org/wiki/IATA_delay_codes">IATA delay codes (AHM730)</a> and the <a href="https://ansperformance.eu/library/iata-delay-codes.pdf">published code list</a>.</li>
+      <li><a href="https://justaviation.aero/airline-irops/">Airline IROPs: managing irregular operations and disruptions</a>. Source for the departmental split and the recovery step order.</li>
+      <li><a href="https://www.lhsystems.com/solutions/ai-other-services/netlineops-aiocc">Lufthansa Systems, NetLine/Ops ++ aiOCC</a> and the <a href="https://runwaygirlnetwork.com/2024/02/lufthansa-systems-ai-powered-operations/">launch announcement</a>, for how a current decision support product frames the controller's role.</li>
+    </ol>
+  </div>
+
+  <footer>Working document. Corrections welcome and credited.</footer>
+
+</div>
+
+</body></html>
