@@ -2,7 +2,7 @@
 
 **System:** Airline disruption care platform (IRREG cancellation exposure model plus Crisis Accommodation sourcing)
 **Client:** the Carrier (a large airline)
-**Author:** [your name], AI consulting capstone, Round 2
+**Author:** Gordan Skopljak, AI consulting capstone, Round 2
 **Basis:** real American Airlines 2015 cancellations (US DOT), overnight care subset, costs modelled
 
 > All euro figures are built on the American Airlines 2015 analog used for the dashboard: 3,305 overnight care events from 10,919 real cancellations. A real engagement re-runs this model on the carrier's own invoices and booking data. The point of this document is the structure of the return and where the risk actually sits, not the second decimal place.
