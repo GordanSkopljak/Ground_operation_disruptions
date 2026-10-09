@@ -19,7 +19,7 @@ When a flight cancels at night, one station duty manager has minutes to work out
 
 ## Read this first: the sector changed after Round 1
 
-Round 1 was researched and presented on **German grantmaking foundations**. Round 2 is built on **airline disruption care**. Two changes happened and both are documented in `feedback/round1_decision.md`, which is the file to read before judging why the Round 1 research does not match the Round 2 build.
+Round 1 was researched and presented on **German grantmaking foundations**. Round 2 is built on **airline disruption care**. Two changes happened and both are documented in `round1_decision.md`, which is the file to read before judging why the Round 1 research does not match the Round 2 build.
 
 The Round 1 materials are retained in `research/` rather than deleted, because a decision record that removes the evidence of what was decided is not a decision record.
 
@@ -28,43 +28,44 @@ The Round 1 materials are retained in `research/` rather than deleted, because a
 ## Start here, five minutes
 
 1. Read `use_case_definition.md` to understand the problem.
-2. Import `mvp/` into n8n, add one OpenAI credential, and click the manual trigger on IRREG v3. It runs on a built in 195 passenger fixture with no upload required.
-3. Follow `mvp/mvp_documentation.md`, section 4, which tells you exactly which nodes to open to see the output.
+2. Import the three workflow JSON exports into n8n (being added, see Known limitations), add one OpenAI credential, and click the manual trigger on IRREG v3. It runs on a built in 195 passenger fixture with no upload required.
+3. Follow `mvp_documentation.md`, section 4, which tells you exactly which nodes to open to see the output.
 
-**Before importing anything, read the warning at the top of `mvp/mvp_documentation.md` about credentials in the exported JSON.**
+**Before importing anything, read the warning at the top of `mvp_documentation.md` about credentials in the exported JSON.**
 
 ---
 
 ## Repository map
 
 ```
-├── README.md                          this file
-├── feedback/
-│   └── round1_decision.md             both sector changes, and what carried across
-├── research/                          Round 1, German foundations
-│   ├── sector_research.md
-│   ├── use_cases.md
-│   ├── opportunities_risks.md
-│   └── mittelverwendung-pitch.md
-├── dashboard/                         the communication layer
-├── use_case_definition.md             problem, stakeholders, success criteria, scope limits
-├── poc/
-│   ├── poc_workflow.json              early IRREG, the proof that the approach works
-│   └── poc_documentation.md
-├── roi_risk_assessment.md             costs, value, 12 and 36 month return, nine risks
-├── compliance/
-│   ├── eu_ai_act_compliance.md        classification and obligations
-│   ├── eu_ai_act_hotel_call_addendum.md
-│   ├── gdpr_documentation.md          data flows, legal bases, DPIA
-│   └── gdpr_hotel_call_addendum.md
-├── strategic_plan.md                  POC to pilot to rollout, KPIs, commercialisation
-├── presentation.pptx                  final presentation
-└── mvp/                               three working workflows
-    ├── irreg_v3.json
-    ├── crisis_accommodation.json
-    ├── hotel_call_intelligence.json
-    ├── mvp_documentation.md
-    └── images/
+README.md                                           this file
+use_case_definition.md                              problem, stakeholders, success criteria, scope limits
+round1_decision.md                                  both sector changes, and what carried across
+roi_risk_assessment.md                              costs, value, 12 and 36 month return, nine risks
+strategic_deployment_plan.md                        POC to pilot to rollout, KPIs, commercialisation
+mvp_documentation.md                                setup, run instructions, node by node walkthrough
+
+Compliance
+  eu_ai_act.md                                      classification and obligations
+  EU AI Act addendum Hotel Call Intelligence workflow.md
+  gdpr.md                                           data flows, legal bases, DPIA
+  GDPR addendum Hotel Call Intelligence workflow.md
+
+Workflows (n8n)
+  Workflow 1.png / 2.png / 3.png                    canvas screenshots
+  JSON exports                                      not yet uploaded, see Known limitations
+
+Communication layer (HTML pages, PDF copies)
+  Cancellation exposure.html                        page for workflow 1
+  Crisis accommodation.html                         page for workflow 2
+  IRROP Hotel Call Intake.html                      page for workflow 3
+  OCC Recovery Map.html                             how the recovery process fits together
+
+Data and samples
+  RP4_Flights_2025_Jan_Dec.xlsx, RP4_Flights_2026_Jan_Jul.xlsx, State_ATFM_Delay.xlsx
+  manifest-sample.csv, pnl-sample.txt, requirements.txt
+
+disruption_care_capstone_final.pptx                 final presentation
 ```
 
 **Why there are two compliance addenda.** The third workflow records a phone call, so personal data reaches the model. That breaks the design defence the first two workflows rest on. Rather than quietly weakening the main packs, the change is documented separately and argued on a different footing. See section 4 of the GDPR addendum.
@@ -87,13 +88,13 @@ The Round 1 materials are retained in `research/` rather than deleted, because a
 
 ![Workflow 3, Hotel Call Intelligence, in n8n](Workflow%203.png)
 
-Full setup, run instructions, error handling and known limitations are in `mvp/mvp_documentation.md`.
+Full setup, run instructions, error handling and known limitations are in `mvp_documentation.md`.
 
 ---
 
 ## Verifying the claims
 
-Every claim below can be checked in the code rather than taken on trust. `mvp/mvp_documentation.md` section 8 names the exact node for each.
+Every claim below can be checked in the code rather than taken on trust. `mvp_documentation.md` section 8 names the exact node for each.
 
 | Claim | Where to check |
 |---|---|
@@ -121,9 +122,10 @@ Every claim below can be checked in the code rather than taken on trust. `mvp/mv
 
 Stated here rather than left to be discovered.
 
+- The n8n JSON exports of the three workflows are not yet in this repository. They are being added with credentials and webhook URLs removed. Until then the canvas screenshots above show the node structure.
 - The production webhook path in workflow 3 is broken. The demo runs through an upload form.
 - Workflow 2 does not contact any hotel. Dispatch is simulated and replies come from a fixture.
-- There is no shared incident reference across the three workflows. The design is in `strategic_plan.md`; it is not wired. This is the most significant gap.
+- There is no shared incident reference across the three workflows. The design is in `strategic_deployment_plan.md`; it is not wired. This is the most significant gap.
 - Hotel room counts are nominal from a static partner list, not live availability.
 - Unit costs are unverified assumptions, to be re baselined on a carrier's real invoices.
 - Trip origin is synthetic. The entire business case depends on that feed existing, which is precisely what the proposed pilot measures.
@@ -134,4 +136,4 @@ Stated here rather than left to be discovered.
 
 Do not fund the integration. Fund a three station pilot for eight to twelve weeks with one job: measure the real capture rate against the 25 percent assumption. The software is cheap, around 140 US dollars a year for all model calls across 3,305 events, and the return is large, but both depend entirely on one feed of data the carrier already owns and does not yet use at the station.
 
-Full reasoning, phased milestones, KPIs and the commercialisation model are in `strategic_plan.md`.
+Full reasoning, phased milestones, KPIs and the commercialisation model are in `strategic_deployment_plan.md`.
