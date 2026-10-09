@@ -1,7 +1,7 @@
 # Airline disruption care platform
 
-**AI consulting capstone, Ironhack. Rounds 1 and 2.**
-Author: Gordan Skopljak
+**AI consulting capstone, Ironhack. Rounds 1 and 2.**  
+Author: Gordan Skopljak  
 Client persona: Chleo, CEO of a large EU airline. Her stated objection to AI is that it is not transparent.
 
 ---
@@ -21,7 +21,7 @@ When a flight cancels at night, one station duty manager has minutes to work out
 
 Round 1 was researched and presented on **German grantmaking foundations**. Round 2 is built on **airline disruption care**. Two changes happened and both are documented in `round1_decision.md`, which is the file to read before judging why the Round 1 research does not match the Round 2 build.
 
-The Round 1 materials are retained in `research/` rather than deleted, because a decision record that removes the evidence of what was decided is not a decision record.
+What Round 1 found, and what carried across into Round 2, is kept in `round1_decision.md` rather than deleted, because a decision record that removes the evidence of what was decided is not a decision record.
 
 ---
 
