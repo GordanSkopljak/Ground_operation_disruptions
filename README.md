@@ -12,6 +12,9 @@ When a flight cancels at night, one station duty manager has minutes to work out
 
 **The system proposes, ranks and explains. A human commits.** Nothing is booked, confirmed or paid automatically.
 
+![Workflow 1, IRREG v3 cancellation exposure, in n8n](Workflow%201.png)
+*Workflow 1 in n8n: manifest in, names pseudonymised, the night costed and the authorisation routed. Workflows 2 and 3 are shown under [The three workflows](#the-three-workflows).*
+
 ---
 
 ## Read this first: the sector changed after Round 1
@@ -75,6 +78,14 @@ The Round 1 materials are retained in `research/` rather than deleted, because a
 | 1 | IRREG v3, cancellation exposure | Reads the manifest, destroys the names, costs the night, routes the authorisation decision | Writes one briefing from numbers already computed |
 | 2 | Crisis Accommodation | Triages partner hotels on rest before the morning departure, ranks offers | Drafts the request, extracts numbers from replies, writes a triage overview |
 | 3 | Hotel Call Intelligence | Transcribes the closing call, extracts commercial terms with confidence scores | Whisper transcription plus structured extraction behind a review gate |
+
+**Workflow 2, Crisis Accommodation.** Drafts the hotel request, waits for replies, extracts and ranks the offers, posts the ranking to Slack.
+
+![Workflow 2, Crisis Accommodation, in n8n](Workflow%202.png)
+
+**Workflow 3, Hotel Call Intelligence.** Transcribes the hotel call, extracts the agreed terms, recalculates the cost in code and drafts the manager email. The broken production webhook is labelled in the canvas itself.
+
+![Workflow 3, Hotel Call Intelligence, in n8n](Workflow%203.png)
 
 Full setup, run instructions, error handling and known limitations are in `mvp/mvp_documentation.md`.
 
